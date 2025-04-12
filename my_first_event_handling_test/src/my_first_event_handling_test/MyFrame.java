@@ -25,6 +25,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 import javax.swing.plaf.DimensionUIResource;
 
 public class MyFrame extends EventsHandler {
@@ -39,7 +40,7 @@ public class MyFrame extends EventsHandler {
 	JButton button3 = new JButton("Green");
 
 	JCheckBox checkBox = new JCheckBox("Enable Feature");
-	JLabel labelCh = new JLabel();
+	JLabel labelCh = new JLabel("test");
 
 	JLabel label1 = new JLabel("Label 1");
 	JLabel label2 = new JLabel("Label 2");

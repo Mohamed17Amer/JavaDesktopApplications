@@ -1,6 +1,7 @@
 package my_first_event_handling_test;
 
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
 
@@ -25,6 +26,9 @@ public class ComponentTest { // to test each component attributes and methods
 		JLabel label = new JLabel("Section I & K");
 		label.setText("midterm_exam");
 		label.setToolTipText("this is a label"); // when hover
+		
+		label.setAlignmentX(Component.LEFT_ALIGNMENT);  	// Sets alignment of JLabel itself respectively to  box layout // from 0.0f to 1.0f  [ 0.0f, 1.0f ]
+		label.setHorizontalAlignment(JLabel.CENTER);    // Sets alignment of text itself into JLabel to be center-aligned within the label
 
 		label.setFont(new Font("Arial", Font.BOLD, 24));
 
@@ -66,6 +70,7 @@ public class ComponentTest { // to test each component attributes and methods
 		button.setBackground(Color.CYAN);
 		button.setPreferredSize(new Dimension(100, 40));
 		button.setFocusable(true); // could be clicked
+		button.setVisible(true);
 
 		/***************** JRadioButton *******************/
 
@@ -139,6 +144,5 @@ public class ComponentTest { // to test each component attributes and methods
 
 }
 
-// In Swing, the default layout manager for both JFrame and JPanel is BorderLayout and FlowLayout, respectively. 
 
-// toggle - list- combo -dialog
+// toggle - list- combo -dialog //

@@ -28,7 +28,11 @@ public class MyFirstGUI {
 
 	public static void main(String[] args) {
 
+		
+		//MyContainer myContainer = new MyContainer();
+		
 		MyFrame myFrame = new MyFrame();
+		
 		/*
 		 * JFrame frame = new JFrame();
 		 * 
