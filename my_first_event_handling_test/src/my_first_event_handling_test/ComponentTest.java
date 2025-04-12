@@ -28,8 +28,11 @@ public class ComponentTest { // to test each component attributes and methods
 		label.setToolTipText("this is a label"); // when hover
 		
 		label.setAlignmentX(Component.LEFT_ALIGNMENT);  	// Sets alignment of JLabel itself respectively to  box layout // from 0.0f to 1.0f  [ 0.0f, 1.0f ]
-		label.setHorizontalAlignment(JLabel.CENTER);    // Sets alignment of text itself into JLabel to be center-aligned within the label
+		label.setHorizontalAlignment(JLabel.CENTER); 		// Sets alignment of text itself into JLabel to be center-aligned within the label
 
+		label.setHorizontalTextPosition( SwingConstants.CENTER );
+		label.setVerticalTextPosition( SwingConstants.BOTTOM ); 
+		
 		label.setFont(new Font("Arial", Font.BOLD, 24));
 
 		label.setBackground(Color.BLUE);
@@ -62,7 +65,8 @@ public class ComponentTest { // to test each component attributes and methods
 
 		textArea.setLineWrap(true); // Enable line wrapping
 		textArea.setWrapStyleWord(true); // Wrap at word boundaries
-
+		textArea.setEditable( false );
+		
 		/***************** JButton *******************/
 
 		JButton button = new JButton("Click Me");

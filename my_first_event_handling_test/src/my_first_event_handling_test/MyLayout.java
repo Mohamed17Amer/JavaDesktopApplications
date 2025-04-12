@@ -1,7 +1,6 @@
 package my_first_event_handling_test;
 
 import java.awt.BorderLayout;
-import java.awt.Component;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.LayoutManager;
@@ -24,6 +23,9 @@ public class MyLayout {
 		/***************** FlowLayout *******************/
 		
 		FlowLayout fLayout = new FlowLayout();  // it is a class, and we create an object
+				   fLayout = new FlowLayout(FlowLayout.RIGHT);  
+				   fLayout = new FlowLayout(FlowLayout.RIGHT,5,5);
+				   
 		
 		panel.setLayout(fLayout); 				// pass the created object
 		frame.setLayout(fLayout);
@@ -60,14 +62,8 @@ public class MyLayout {
 		
 		
 		
-		
-		
-		
 	}
 	
-	
-	
-	
-	
+		
 
 }
